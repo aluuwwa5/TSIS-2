@@ -9,13 +9,13 @@ from airflow.operators.python import PythonOperator
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Project root (folder where this file is located)
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 
 import sys
 sys.path.insert(0, str(PROJECT_ROOT))
-# Import functions from src
+
 from src.scraper import scrape_tengri_extended
 from src.cleaner import clean_tengri
 from src.loader import load_to_sqlite
