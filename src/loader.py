@@ -25,7 +25,7 @@ def load_to_sqlite():
     conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()
 
-    # Explicit schema (simple)
+
     cur.execute(
         f"""
         CREATE TABLE IF NOT EXISTS {TABLE_NAME} (
@@ -42,7 +42,6 @@ def load_to_sqlite():
     )
     conn.commit()
 
-    # Replace existing data on each run
     cur.execute(f"DELETE FROM {TABLE_NAME}")
     conn.commit()
 
