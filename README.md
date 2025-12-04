@@ -89,11 +89,16 @@ Once the script finishes running, you can check the `data/raw_tengri.csv` file f
 5) Open in browser:
 
 ``` http://localhost:8080```
+Then you should see:
+<img width="379" height="355" alt="Screenshot 2025-12-04 at 11 25 38 PM" src="https://github.com/user-attachments/assets/c48e5532-6b89-4ab6-acc1-4f3f89499196" />
+<img width="911" height="201" alt="Screenshot 2025-12-04 at 11 25 49 PM" src="https://github.com/user-attachments/assets/ebad227a-ed4e-4ba5-ad9a-5fb3df8506b4" />
+
 
 ## Expected Output
 
 SQLite Table: 
 <img width="1441" height="233" alt="image" src="https://github.com/user-attachments/assets/da9e224a-8934-42f9-ab60-b8e9c2b88a9e" /> <img width="182" height="134" alt="image" src="https://github.com/user-attachments/assets/ab8b7c97-007d-4cdc-a2e3-e38acb63db74" />
+
 
 
 
