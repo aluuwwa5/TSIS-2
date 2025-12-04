@@ -33,7 +33,7 @@ The final dataset contains at least **100 cleaned news articles** with fields:
 
 ## How to Run Scraping
 
-To scrape the latest news data from Tengrinews.kz, you can run the scraper manually or automate it using Apache Airflow.
+To scrape the latest news data from Tengrinews.kz, we can run the scraper manually or automate it using Apache Airflow.
 
 ### 1. Install Dependencies
 
@@ -115,4 +115,5 @@ Once the script finishes running, you can check the `data/raw_tengri.csv` file f
 
 SQLite Table: 
 <img width="1441" height="233" alt="image" src="https://github.com/user-attachments/assets/da9e224a-8934-42f9-ab60-b8e9c2b88a9e" /> <img width="182" height="134" alt="image" src="https://github.com/user-attachments/assets/ab8b7c97-007d-4cdc-a2e3-e38acb63db74" />
+
 
