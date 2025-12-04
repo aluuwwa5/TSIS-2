@@ -31,45 +31,26 @@ The final dataset contains at least **100 cleaned news articles** with fields:
 - `has_image`
 
 
-## How to Run Scraping
+## How to Run Scraping 
+If you prefer to run the scraper manually to collect the latest data from Tengrinews.kz, follow these steps:
+### 1. Install Dependencies 
+1. Open a terminal and navigate to the project directory.
+2. Create virtual environment
 
-To scrape the latest news data from Tengrinews.kz, we can run the scraper manually or automate it using Apache Airflow.
-
-### 1. Install Dependencies
-
-Before running the scraper, make sure you have installed all necessary dependencies. You can do this by running:
-
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Then install dependencies in requirements.txt file:
 ```bash
 pip install -r requirements.txt
 ```
 
+Starts the news collection manually
+```bash
+python src/scraper.py
+```
 
-We can also run scraping without Airflow, directly via Python.
-
-```python src/scraper.py```
-
-This saves raw scraped data to:
-
-```data/raw.json```
-
-
-
-### Run the Scraper Manually
-
-If you prefer to run the scraper manually to collect the latest data from Tengrinews.kz, follow these steps:
-
-1. Open a terminal and navigate to the project directory.
-2. Ensure you have all dependencies installed by running:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the scraper script with the following command:
-
-    ```bash
-    python src/scraper.py
-    ```
 
 #### What this does:
 - The script opens a headless browser (via Selenium) to scrape data from various sections of the Tengrinews website (e.g., Kazakhstan, World, Crime, Science).
@@ -113,6 +94,7 @@ Once the script finishes running, you can check the `data/raw_tengri.csv` file f
 
 SQLite Table: 
 <img width="1441" height="233" alt="image" src="https://github.com/user-attachments/assets/da9e224a-8934-42f9-ab60-b8e9c2b88a9e" /> <img width="182" height="134" alt="image" src="https://github.com/user-attachments/assets/ab8b7c97-007d-4cdc-a2e3-e38acb63db74" />
+
 
 
 
