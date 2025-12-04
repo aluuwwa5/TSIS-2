@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-# логирование
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
@@ -67,12 +67,11 @@ def scrape_page(driver, url, news_list, seen):
                 if not title:
                     continue
 
-                # Дата
+                
                 
                 lines = card.text.strip().split('\n')
                 date_str = lines[-1].strip() if len(lines) > 1 else "N/A"
 
-                # Картинка
                 img = None
                 try:
                     img_element = card.find_element(By.TAG_NAME, "img")
@@ -85,7 +84,7 @@ def scrape_page(driver, url, news_list, seen):
                 if not link.startswith("http"):
                     link = "https://tengrinews.kz" + link
 
-                # категории
+                
                 category = "other"
                 categories_map = {
                     "/kazakhstan_news/": "kazakhstan",
