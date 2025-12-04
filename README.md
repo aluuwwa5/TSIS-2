@@ -44,9 +44,7 @@ pip install -r requirements.txt
 ```
 
 
-
-## How to run scraping
-We can run scraping without Airflow, directly via Python.
+We can also run scraping without Airflow, directly via Python.
 
 ```python src/scraper.py```
 
@@ -115,5 +113,6 @@ Once the script finishes running, you can check the `data/raw_tengri.csv` file f
 
 SQLite Table: 
 <img width="1441" height="233" alt="image" src="https://github.com/user-attachments/assets/da9e224a-8934-42f9-ab60-b8e9c2b88a9e" /> <img width="182" height="134" alt="image" src="https://github.com/user-attachments/assets/ab8b7c97-007d-4cdc-a2e3-e38acb63db74" />
+
 
 
